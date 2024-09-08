@@ -1,8 +1,11 @@
+import { ToastContainer } from "react-toastify";
 import "./App.css";
+import AppRoutes from "./components/router/router";
 function App() {
   return (
     <>
-      <h1 className=" text-2xl text-red-300">Listado de Roles</h1>
+      <ToastContainer />
+      <AppRoutes></AppRoutes>
     </>
   );
 }
