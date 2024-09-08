@@ -12,7 +12,7 @@ function NewSale() {
         <LayoutGlobal title="Nueva Venta">
             <div className="flex justify-end  ">
                 <div className="border border-white bg-green-500 rounded-full   ">
-                    <FaBasketShopping onClick={() => setOpenModal(true)} className='p-2 cursor-pointer' size={50} />
+                    <FaBasketShopping onClick={() => setOpenModal(true)} className='text-white p-2 cursor-pointer' size={50} />
                 </div>
 
             </div>

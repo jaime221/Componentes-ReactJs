@@ -1,6 +1,7 @@
 import ModeDark from '../hooks/ModeDark';
 import logo from '../../assets/logo.jpeg';
 import { ILayoutGlobalProps } from './types/layout-global.types';
+import { NavLink } from 'react-router-dom';
 
 function LayoutGlobal( props: ILayoutGlobalProps) {
     return (
@@ -14,12 +15,12 @@ function LayoutGlobal( props: ILayoutGlobalProps) {
                     </div>
                     <div className="flex flex-col flex-1 overflow-y-auto">
                         <nav className="flex-1 px-2 py-4 bg-gray-800 border border-gray-700">
-                            <a href="#" className="flex items-center px-4 py-2 text-white hover:bg-gray-700">
+                            <NavLink  to={"/"} className="flex items-center px-4 py-2 text-white hover:bg-gray-700">
                                 Inicio
-                            </a>
-                            <a href="#" className="flex items-center px-4 py-2 mt-2 text-white hover:bg-gray-700">
+                            </NavLink>
+                            <NavLink to={"/users"} className="flex items-center px-4 py-2 mt-2 text-white hover:bg-gray-700">
                                 Usuarios
-                            </a>
+                            </NavLink>
                             <a href="#" className="flex items-center px-4 py-2 mt-2 text-white hover:bg-gray-700">
                                 Clientes
                             </a>
